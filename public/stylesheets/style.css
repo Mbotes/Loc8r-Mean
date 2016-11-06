@@ -15,7 +15,18 @@ body {
   margin: 0 5px;
 }
 .reviewTimestamp {
-  color: #ccc;
+  color: #9e9e9e;
+}
+.location-map img {
+  margin:0 auto;
+}
+
+.list-group-item {
+  margin-bottom: 15px !important;
+}
+
+.page-header {
+  margin-top: 55px !important;
 }
 
 
