@@ -6,6 +6,7 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet', href='/bootstrap/css/paper.bootstrap.css')
   body
+    //NAV BAR
     .navbar.navbar-default.navbar-fixed-top
       .container
         .navbar-header
@@ -19,9 +20,11 @@ html
           ul.nav.navbar-nav
             li
               a(href='/about/') About
+    //Main body content
     .container
       block content
 
+      //footer content
       footer
         .row
           .col-xs-12

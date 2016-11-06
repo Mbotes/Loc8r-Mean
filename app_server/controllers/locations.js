@@ -4,12 +4,12 @@
 
 /* GET 'home' page */
 module.exports.homelist = function (req, res) {
-    res.render('index', {title: 'Home'});
+    res.render('locations-list', {title: 'Home'});
 };
 
 /* GET 'Location info' page */
 module.exports.locationInfo = function(req, res) {
-    res.render('index', {title: 'location info'});
+    res.render('location-info', {title: 'location info'});
 };
 
 
