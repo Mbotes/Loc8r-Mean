@@ -40,7 +40,16 @@ module.exports.homelist = function (req, res) {
 
 /* GET 'Location info' page */
 module.exports.locationInfo = function(req, res) {
-    res.render('location-info', {title: 'location info'});
+    res.render('location-info', {
+        title: 'location info',
+        pageHeader: {
+            title: 'Loc8r',
+            strapline: 'Find places to work near you!'
+        },
+        locationInfo: {
+
+        }
+    });
 };
 
 
