@@ -2,6 +2,7 @@
  * Created by michaelbotes on 2016/11/09.
  */
 var mongoose = require( 'mongoose' );
+require('./locations');
 
 var dbURI = 'mongodb://localhost/loc8r';
 mongoose.connect(dbURI);
