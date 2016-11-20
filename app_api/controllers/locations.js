@@ -16,7 +16,10 @@ module.exports.locationsListByDistance = function (req, res) {
     sendJsonResponse(res, 200, {"status" : "success"});
 };
 module.exports.locationReadOne = function (req, res) {
-    sendJsonResponse(res, 200, {"status" : "success"});
+    Loc.findById(req.params.locationid)
+        .exec(function(err, location){
+           sendJsonResponse(res, 200, location);
+        });
 };
 module.exports.locationsUpdateOne = function (req, res) {
     sendJsonResponse(res, 200, {"status" : "success"});
