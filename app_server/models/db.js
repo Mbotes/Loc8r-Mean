@@ -6,8 +6,8 @@ require('./locations');
 
 var dbURI = 'mongodb://localhost/loc8r';
 if (process.env.NODE_ENV === 'production') {
-    // dbURI = 'mongodb://heroku_fv83rrb5:vi1064gdu4niunlpje0buj9tqj@ds151137.mlab.com:51137/heroku_fv83rrb5';
-    dbURI = process.env.MONGOLAB_URI;
+    dbURI = 'mongodb://heroku_fv83rrb5:vi1064gdu4niunlpje0buj9tqj@ds151137.mlab.com:51137/heroku_fv83rrb5';
+    // dbURI = process.env.MONGOLAB_URI;
 }
 mongoose.connect(dbURI);
 
